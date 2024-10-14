@@ -10,6 +10,9 @@ contract TokenBank {
 
     mapping(address => uint256) public balances;
 
+    event Deposit(address indexed user, uint256 amount);
+    event Withdraw(address indexed user, uint256 amount);
+
     constructor(IERC20 _token) {
         token = _token;
     }
@@ -21,6 +24,7 @@ contract TokenBank {
         token.transferFrom(msg.sender, address(this), amount);
 
         balances[msg.sender] += amount;
+        emit Deposit(msg.sender, amount);
     }
 
     function withdraw(uint256 amount) public {
@@ -29,6 +33,7 @@ contract TokenBank {
 
         balances[msg.sender] -= amount;
         token.transfer(msg.sender, amount);
+        emit Withdraw(msg.sender, amount);  
     }
 
 }

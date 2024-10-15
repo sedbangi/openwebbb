@@ -17,8 +17,6 @@ contract TokenBank {
         token = _token;
     }
 
-    receive() external payable {}
-
     function deposit(uint256 amount) public {
         require(amount > 0, "Amount must be greater than 0");
         token.transferFrom(msg.sender, address(this), amount);

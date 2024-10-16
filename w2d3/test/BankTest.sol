@@ -9,7 +9,7 @@ import {Bank} from "../src/Bank.sol";
 
 contract BankTest is Test {
     Bank private bank;
-    address private user = 0x95684300DB905a3452Deb06deBD19e4De7706152;
+    address private user = address(0x95684300DB);
     event Deposit(address indexed user, uint amount);
 
     function setUp() public {

@@ -40,6 +40,7 @@ contract nftMarket is IERC721Receiver {
 
     function buyNFT(uint256 tokenId) public returns(bool) {
         nftListings memory nl = nftListings[tokenId];
+        require(nl.seller != msg.sender, "you are the owner of nft");
 
         token.transferFrom(msg.sender, address(this), nl.price);
         nft.safeTransferFrom(address(this), msg.sender, tokenId);

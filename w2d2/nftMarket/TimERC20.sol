@@ -72,22 +72,7 @@ contract TimERC20 {
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {   
         // write your code here 
         return allowances[_owner][_spender];    
-
     }
-
-    // callback function, bank
-    // function transferWithCallback(address _to, uint256 _value) external returns (bool) {
-    //     require(_value > 0, "value must be greater than zero");
-    //     bool suc = transfer(_to, _value);
-    //     require(suc, "transfer failed");
-
-    //     if (isContract(_to)) {
-    //         ITokenReceiver receiver = ITokenReceiver(_to);
-    //         receiver.tokensReceived(msg.sender, _value);
-    //     }
-    //     return true;
-    // }
-
 
     // callback function, nft
     function transferWithCallback(address _to, uint256 _value, bytes calldata data) external returns (bool) {

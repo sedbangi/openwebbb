@@ -14,13 +14,13 @@
 | | [call、delegatecall、staticcall](https://decert.me/quests/5849ac2d-7a6f-4c94-978c-73c582a575dd) | 1 |  |
 | | [编写 ERC20 token 合约](https://decert.me/quests/aa45f136-27a3-4bc9-b4f7-15308e1e0daa) | 1 |  |
 | | [Solidity 编写 TokenBank](https://decert.me/quests/eeb9f7d8-6fd0-4c38-b09c-75a29bd53af3) | 1 | [手把手教你实现TokenBank智能合约](https://learnblockchain.cn/article/8657) |\
-|W2D1|[扩展 ERC20 加入Hook，并使用 Hook](https://decert.me/quests/4df553df-fbab-49c8-a05f-83256432c6af)|0||
+|W2D1|[扩展 ERC20 加入Hook，并使用 Hook](https://decert.me/quests/4df553df-fbab-49c8-a05f-83256432c6af)|1||
 | |[DEX 交易所交互](https://decert.me/quests/65e9c4a1-a2ee-41ea-b8d7-7a5a1a945cbc)|1||
 |W2D2 |[编写 ERC721 NFT 合约](https://decert.me/quests/852f5836-a03d-4483-a7e0-b0f6f8bda01c)|1||
-| |[Solidity 实现用 Token 购买 NFT](https://decert.me/quests/abdbc346-8314-4394-8f97-8732780602ed)|0| |
+| |[Solidity 实现用 Token 购买 NFT](https://decert.me/quests/abdbc346-8314-4394-8f97-8732780602ed)|1| |
 |W2D3|[使用Foundry编写Solidity单元测试](https://decert.me/quests/4578ff5b-4dcb-4c28-8b5f-7456ed1ab0a4)|1||
 | |[Foundry 框架合约开发测试](https://decert.me/quests/3bca8f1f-df6b-469b-941e-79388ee280c6)|1||
-|W2D4 | | | |
+|W2D4 | [Foundry 高阶测试](https://decert.me/challenge/08973815-3ebe-48d1-915e-7fc67c448763) | | |
 
 
 

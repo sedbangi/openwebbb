@@ -44,26 +44,11 @@ contract nftMarket is IERC721Receiver {
         token.transferFrom(msg.sender, address(this), nl.price);
         nft.safeTransferFrom(address(this), msg.sender, tokenId);
         token.transfer(nl.seller, nl.price);
-        // token.transferWithCallback(nl.seller, nl.price, data);
 
         delete nftListings[tokenId];
 
         emit DealNFT(msg.sender, tokenId, nl.price);
     }
-
-    // function buyNFTCallback(uint256 tokenId) public returns(bool) {
-    //     nftListings memory nl = nftListings[tokenId];
-
-    //     token.transferFrom(msg.sender, address(this), nl.price);
-    //     nft.safeTransferFrom(address(this), msg.sender, tokenId);
-
-    //     bytes memory data = abi.encodePacked(tokenId);
-    //     token.transferWithCallback(nl.seller, nl.price, data);
-
-    //     delete nftListings[tokenId];
-
-    //     emit DealNFT(msg.sender, tokenId, nl.price);
-    // }
 
     function tokensReceived(
         address from,

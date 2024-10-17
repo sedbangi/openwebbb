@@ -72,6 +72,7 @@ contract nftMarket is IERC721Receiver {
         bytes calldata data
     ) external {
         // tokenId must be passed in data
+        require(msg.sender == address(token), "Invalid token");
         require(data.length == 32, "Invalid data"); 
         uint256 tokenId = abi.decode(data, (uint256));
 

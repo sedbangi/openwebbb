@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect MetaMask Wallet</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.umd.min.js"></script>
+  <script src="https://unpkg.com/web3modal"></script>
+</head>
+<body>
+  <div>
+    <h1>Connect to MetaMask</h1>
+    <button id="connectButton">Connect Wallet</button>
+    <p id="walletAddress">Not connected</p>
+  </div>
+
+  <script>
+    // to check Web3Modal and Ethers 
+    if (typeof Web3Modal === "undefined" || typeof ethers === "undefined") {
+      console.error("Web3Modal or Ethers.js is not loaded");
+    } else {
+      // initialize Web3Modal
+      const providerOptions = {};  // the options of the wallet
+      const web3Modal = new Web3Modal.default({
+        cacheProvider: false,  
+        providerOptions 
+      });
+
+      let provider;
+      let signer;
+
+      // click the connect button
+      document.getElementById("connectButton").addEventListener("click", async () => {
+        try {
+          // open Web3Modal and connect the wallet
+          const instance = await web3Modal.connect();
+          provider = new ethers.providers.Web3Provider(instance);
+          signer = provider.getSigner();
+
+          // get the wallet address
+          const address = await signer.getAddress();
+
+          // show the wallet address
+          document.getElementById("walletAddress").innerText = `Wallet Address: ${address}`;
+        } catch (err) {
+          console.error("Connection failed:", err);
+          document.getElementById("walletAddress").innerText = "Connection failed";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

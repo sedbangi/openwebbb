@@ -20,7 +20,14 @@
 | |[Solidity 实现用 Token 购买 NFT](https://decert.me/quests/abdbc346-8314-4394-8f97-8732780602ed)|1| |
 |W2D3|[使用Foundry编写Solidity单元测试](https://decert.me/quests/4578ff5b-4dcb-4c28-8b5f-7456ed1ab0a4)|1||
 | |[Foundry 框架合约开发测试](https://decert.me/quests/3bca8f1f-df6b-469b-941e-79388ee280c6)|1||
-|W2D4 | [Foundry 高阶测试](https://decert.me/challenge/08973815-3ebe-48d1-915e-7fc67c448763) | | |
+|W2D4 | [Foundry 高阶测试](https://decert.me/challenge/08973815-3ebe-48d1-915e-7fc67c448763) |0 | |
+|W2D5|[使用 Viem 读取NFT合约信息](https://decert.me/quests/1fa95fb5-e7d4-40ec-88d4-89d8f4953f15)|0||
+| | [使用Foundry部署和开源合约](https://decert.me/quests/7bd246d8-f0c3-45c0-a335-766505afdba9)|1|[使用Foundry部署和开源合约erc20](https://learnblockchain.cn/article/8703)|
+|W3D1|[实践 SafeWallet 多签钱包](https://decert.me/quests/4d4d50ab-84ab-4289-ac67-e3839e078537)|1||
+||[实现一个简单的多签合约](https://decert.me/quests/f832d7a2-2806-4ad9-8560-a27ad8570c6f)|1||
+|W3D2|[通过JS利用Web3Modal连接到MetaMask](https://decert.me/challenge/aebe24be-0bec-4c6c-bef1-22eb08817621)|||
+
+
 
 
 

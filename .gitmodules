@@ -1,0 +1,12 @@
+[submodule "w3d3/lib/forge-std"]
+	path = w3d3/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "w3d3/lib/openzeppelin-contracts"]
+	path = w3d3/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "w2d5/viemsh/viem-foundry/lib/forge-std"]
+	path = w2d5/viemsh/viem-foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "w2d4/nftMarket/lib/forge-std"]
+	path = w2d4/nftMarket/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

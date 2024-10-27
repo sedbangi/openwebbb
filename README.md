@@ -25,8 +25,8 @@
 | | [使用Foundry部署和开源合约](https://decert.me/quests/7bd246d8-f0c3-45c0-a335-766505afdba9)|1|[使用Foundry部署和开源合约erc20](https://learnblockchain.cn/article/8703)|
 |W3D1|[实践 SafeWallet 多签钱包](https://decert.me/quests/4d4d50ab-84ab-4289-ac67-e3839e078537)|1||
 ||[实现一个简单的多签合约](https://decert.me/quests/f832d7a2-2806-4ad9-8560-a27ad8570c6f)|1||
-|W3D2|[通过JS利用Web3Modal连接到MetaMask](https://decert.me/challenge/aebe24be-0bec-4c6c-bef1-22eb08817621)|||
-|W3D3|[使用EIP712进行链下Permit和白名单设计](https://decert.me/challenge/fc66ef6c-35db-4ee7-b11d-c3b2d3fa356a)|||
+|W3D2|[通过JS利用Web3Modal连接到MetaMask](https://decert.me/challenge/aebe24be-0bec-4c6c-bef1-22eb08817621)|1||
+|W3D3|[使用EIP712进行链下Permit和白名单设计](https://decert.me/challenge/fc66ef6c-35db-4ee7-b11d-c3b2d3fa356a)|0||
 |W3D4|[利用ABI逆向解码交易数据](https://decert.me/challenge/0ba0f6e3-2b87-4a9b-b3aa-ae5f323459e1)|1||
 | | [使用 Viem 查询 USDC 最近100个区块内的转账记录](https://decert.me/challenge/982e088b-f252-466b-8311-1a5834a7c8d1) |1||
 

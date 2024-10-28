@@ -27,6 +27,11 @@ async function getOwnerOfNFT(tokenId: bigint){
 async function getTokenURIofNFT(tokenId: bigint) {
     const nftUri = await contract.read.tokenURI([tokenId]);
     console.log("URI of token", tokenId,"nft is:\n",nftUri);
+    const httpurl = nftUri.replace('ipfs://', 'https://ipfs.io/ipfs/');
+    console.log("http Url", httpurl, "\n");
+    const response = await fetch(httpurl);
+    const metadata = await response.json();
+    console.log('NFT Metadata:', metadata);
 }
 
 async function main() {

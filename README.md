@@ -29,7 +29,8 @@
 |W3D3|[使用EIP712进行链下Permit和白名单设计](https://decert.me/challenge/fc66ef6c-35db-4ee7-b11d-c3b2d3fa356a)|0||
 |W3D4|[利用ABI逆向解码交易数据](https://decert.me/challenge/0ba0f6e3-2b87-4a9b-b3aa-ae5f323459e1)|1||
 | | [使用 Viem 查询 USDC 最近100个区块内的转账记录](https://decert.me/challenge/982e088b-f252-466b-8311-1a5834a7c8d1) |1||
-
+|W4D1 | [实践可升级合约及最小代理](https://decert.me/challenge/ac607bb0-53b5-421f-a9df-f3db4a1495f2) |||
+||[理解 Permit2 及实践](https://decert.me/challenge/1fa3ecbc-a3cd-43ae-908e-661aac97bdc0)|||
 
 
 

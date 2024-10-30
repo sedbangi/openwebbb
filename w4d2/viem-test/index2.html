@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USDT Transfer Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+    <h1>USDT Transfer Tracker</h1>
+    <pre id="output">Waiting for USDT transfers...</pre>
+
+    <h1>最新区块信息</h1>
+            <p>区块高度: {blockHeight}</p>
+            <p>区块哈希值: {blockHash}</p>
+            <h2>最新 USDT 转账记录</h2>
+
+    <script>
+        const USDT_ADDRESS = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
+        const TRANSFER_TOPIC = ethers.utils.id('Transfer(address,address,uint256)');
+
+        async function main() {
+            const provider = new ethers.providers.WebSocketProvider('wss://ethereum-rpc.publicnode.com');
+            const USDTCon = new ethers.Contract(USDT_ADDRESS, TRANSFER_TOPIC, provider);
+
+            
+
+        };
+
+
+
+    </script>
+</body>
+</html>

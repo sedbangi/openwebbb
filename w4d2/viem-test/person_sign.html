@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaMask Personal Sign Example</title>
+  <script type="module">
+    import { createWalletClient, custom, toHex } from 'https://esm.sh/viem';
+
+    async function connectAndSign() {
+      if (typeof window.ethereum === 'undefined') {
+        alert('MetaMask is not installed. Please install MetaMask and try again.');
+        return;
+      }
+
+      // Request account access
+      try {
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const [account] = await window.ethereum.request({ method: 'eth_accounts' });
+
+        // Initialize viem client for MetaMask
+        const walletClient = createWalletClient({
+          transport: custom(window.ethereum)
+        });
+
+        // Convert the message to hex format
+        const message = "Hello from viem and MetaMask!";
+        const messageHex = toHex(message);
+
+        // Request MetaMask to sign the message
+        const signature = await walletClient.request({
+          method: 'personal_sign',
+          params: [messageHex, account],
+        });
+
+        // Display the signature
+        document.getElementById('signature').innerText = `Signature: ${signature}`;
+      } catch (error) {
+        console.error("Error signing message:", error);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>MetaMask Personal Sign Example</h1>
+  <button onclick="connectAndSign()">Sign Message</button>
+  <p id="signature">Signature will appear here...</p>
+</body>
+</html>

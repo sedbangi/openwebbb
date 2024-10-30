@@ -18,7 +18,7 @@ async function getRecentUSDCTransfers() {
     // get the latest block number
     const latestBlockNumber = await publicClient.getBlockNumber();
 
-    // 
+    // set the range of block number
     const startBlock = latestBlockNumber - BigInt(100);
 
     const logs = await publicClient.getLogs({

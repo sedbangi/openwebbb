@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viem Hash Example</title>
+</head>
+<body>
+    <script type="module">
+        import { hashMessage } from "https://cdn.jsdelivr.net/npm/viem@latest/dist/viem.esm.js";
+
+        function main() {
+            const message = "hello world";
+            const messageHash = hashMessage(message);
+            console.log("Message hash:", messageHash);
+        }
+
+        main();
+    </script>
+</body>
+</html>

@@ -31,6 +31,9 @@
 | | [使用 Viem 查询 USDC 最近100个区块内的转账记录](https://decert.me/challenge/982e088b-f252-466b-8311-1a5834a7c8d1) |1||
 |W4D1 | [实践可升级合约及最小代理](https://decert.me/challenge/ac607bb0-53b5-421f-a9df-f3db4a1495f2) |||
 ||[理解 Permit2 及实践](https://decert.me/challenge/1fa3ecbc-a3cd-43ae-908e-661aac97bdc0)|||
+|W4D2|[使用Viem监听最新USDT转账流水和最新区块信息](https://decert.me/challenge/1267b0cc-ac39-47a7-9a4b-2ef482ff2c5c)|||
+|W4D3|[在TheGraph上存储NFTs持仓人列表](https://decert.me/challenge/ebb2c893-d671-41c5-a699-51d1d1634b87)|||
+
 
 
 

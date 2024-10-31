@@ -6,7 +6,7 @@ import { mainnet } from 'viem/chains';
 
 // USDT 地址和 Transfer 事件的签名
 const USDT_ADDRESS = '0xdac17f958d2ee523a2206206994597c13d831ec7';
-const TRANSFER_EVENT_SIGNATURE = 'Transfer(address,address,uint256)';
+// const TRANSFER_EVENT_SIGNATURE = 'Transfer(address,address,uint256)';
 
 // 使用 viem 创建 WebSocket 客户端连接到以太坊主网
 const client = createPublicClient({

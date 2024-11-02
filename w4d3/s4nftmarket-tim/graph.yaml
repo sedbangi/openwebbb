@@ -1,0 +1,4 @@
+ipfs:
+  host: "api.thegraph.com"
+  port: 5001
+  protocol: "https"

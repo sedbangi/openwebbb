@@ -1,0 +1,31 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: NFTMarketTim
+    network: sepolia
+    source:
+      address: "0x9eb054417350Df8DcA50D475Bc3B45a8391311b7"
+      abi: NFTMarketTim
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - List
+        - Sold
+        - OrderBook
+        - FilledOrder
+      abis:
+        - name: NFTMarketTim
+          file: ./abis/NFTMarketTim.json
+      eventHandlers:
+        - event: List(indexed address,indexed uint256,bytes32,address,address,uint256,uint256)
+          handler: handleList
+        - event: Sold(bytes32,address,uint256)
+          handler: handleSold
+      file: ./src/nft-market-tim.ts

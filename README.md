@@ -33,6 +33,9 @@
 ||[理解 Permit2 及实践](https://decert.me/challenge/1fa3ecbc-a3cd-43ae-908e-661aac97bdc0)|||
 |W4D2|[使用Viem监听最新USDT转账流水和最新区块信息](https://decert.me/challenge/1267b0cc-ac39-47a7-9a4b-2ef482ff2c5c)|||
 |W4D3|[在TheGraph上存储NFTs持仓人列表](https://decert.me/challenge/ebb2c893-d671-41c5-a699-51d1d1634b87)|||
+|W4D4|[EIP712离线签名方式出租NFT](https://decert.me/challenge/d9c6e975-4742-4f81-89fa-5986b61062ea)|||
+|W4D5|[编写IDO募集ETH发行Token](https://decert.me/challenge/ee2be994-5987-4324-afb5-0279d6aa7e11)|||
+||[编写质押挖矿合约](https://decert.me/challenge/3144854f-5dc4-49d7-bb5c-b438f2cd6ac5)|||
 
 
 

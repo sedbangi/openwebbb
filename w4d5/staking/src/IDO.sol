@@ -1,6 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.22;
 
+// https://decert.me/challenge/3144854f-5dc4-49d7-bb5c-b438f2cd6ac5
+// chenyuqing
+
+// IDO: the project give out 1000000 token to raise at least 100ETH but no more than 200ETH
+// If the project failed, users can make a refund
+// If the projcet success, the project can give out tokens to users base on their percetion of contributed ETH
+
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // raise ETH and give out token
@@ -91,12 +98,14 @@ contract IDO {
         emit TokensClaimed(msg.sender, amount);
     }
 
+    // the owner can withdraw eth only if the project success 
     function withdraw() external onlySuccess onlyOwner {
         require(address(this).balance > 0, "No ETH to withdraw");
         payable(owner).transfer(address(this).balance);
         emit Withdrawn(address(this).balance);
     }
 
+    // users can make a refund if the project falied
     function refund() external onlyFailed {
         uint256 amount = contributions[msg.sender];
         require(amount > 0, "No contributions to refund");

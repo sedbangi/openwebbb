@@ -10,3 +10,12 @@
 [submodule "w5d2/slot/lib/forge-std"]
 	path = w5d2/slot/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "w5d3/InscriptionFactoryV2/lib/forge-std"]
+	path = w5d3/InscriptionFactoryV2/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "w5d3/InscriptionFactoryV2/lib/openzeppelin-contracts"]
+	path = w5d3/InscriptionFactoryV2/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "w5d5/ctf/lib/forge-std"]
+	path = w5d5/ctf/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

@@ -36,7 +36,14 @@
 |W4D4|[EIP712离线签名方式出租NFT](https://decert.me/challenge/d9c6e975-4742-4f81-89fa-5986b61062ea)|||
 |W4D5|[编写IDO募集ETH发行Token](https://decert.me/challenge/ee2be994-5987-4324-afb5-0279d6aa7e11)|||
 ||[编写质押挖矿合约](https://decert.me/challenge/3144854f-5dc4-49d7-bb5c-b438f2cd6ac5)|||
-
+|W5D2|[使用Solidity内联汇编修改合约Owner地址](https://decert.me/challenge/163c68ab-8adf-4377-a1c2-b5d0132edc69)|||
+||[读取合约私有变量数据](https://decert.me/challenge/b0782759-4995-4bcb-85c2-2af749f0fde9)|||
+|W5D3|[实践可升级合约及最小代理-版本二](https://decert.me/challenge/ac607bb0-53b5-421f-a9df-f3db4a1495f2)|||
+||[编写一个可升级的 NFT Market 合约](https://decert.me/challenge/ddbdd3c4-a633-49d7-adf9-34a6292ce3a8)|||
+|W5D4|[用 Solidity 实现一个链表](https://decert.me/challenge/753d5050-e5e4-4a0d-8ad9-9ecd7e0e0788)|||
+||[组合使用 MerkleTree 白名单、 Permit 授权 及 Multicall](https://decert.me/challenge/faa435a5-f462-4f92-a209-3a7e8fdc4d81)|||
+|W5D5|[安全挑战：Hack Vault](https://decert.me/challenge/b5368265-89b3-4058-8a57-a41bde625f5b)|||
+|W6D1|[基于第三方服务实现合约自动化调用](https://decert.me/challenge/072fccb4-a976-4cf9-933c-c4ef14e0f6eb)|||
 
 
 

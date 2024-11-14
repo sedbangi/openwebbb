@@ -25,3 +25,12 @@
 [submodule "w6d1/automation/lib/chainlink-brownie-contracts"]
 	path = w6d1/automation/lib/chainlink-brownie-contracts
 	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "w6d3/myDex/lib/forge-std"]
+	path = w6d3/myDex/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "w6d3/myDex/lib/v2-core"]
+	path = w6d3/myDex/lib/v2-core
+	url = https://github.com/uniswap/v2-core
+[submodule "w6d3/myDex/lib/v2-periphery"]
+	path = w6d3/myDex/lib/v2-periphery
+	url = https://github.com/uniswap/v2-periphery
